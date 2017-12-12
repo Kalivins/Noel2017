@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'HelveticaNeueLTStd-MdCn';
+    src: url('../fonts/HELVETICANEUELTSTD-MDCN.OTF');
+}
+@font-face {
+    font-family: 'HelveticaNeueLTStd-ThCn';
+    src: url('../fonts/HelveticaNeueLTStd-ThCn.OTF');
+}
+body {
+    background-color: #E84A0C !important;
+    overflow: hidden;
+    pointer-events: none;
+}
+html {
+    cursor: url(../img/foo523.cur), progress !important;
+}
+.grelot {
+    pointer-events: painted;
+}
+.flame-main {
+  animation-name: flameWobble;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.flame-main.one {
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+.flame-main.two {
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+.flame-main.three {
+  animation-duration: 2.1s;
+  animation-delay: 3s;
+}
+.flame-main.four {
+  animation-duration: 3.2s;
+  animation-delay: 4s;
+}
+.flame-main.five {
+  animation-duration: 2.5s;
+  animation-delay: 5s;
+}
+@keyframes flameWobble {
+  50% {
+    transform: scale(1,1.2) translate(0, -30px) rotate(-2deg);
+  }
+}
+.flex {
+    display: flex;
+    pointer-events: none;
+}
+#joyeuse {
+    margin-left: 7%;
+    width: 73%;
+    pointer-events: none;
+}
+.row {
+    pointer-events: none;
+}
+.access {
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+    pointer-events: none;
+}
+.med {
+    top: 80px;
+    left: -110px;
+    animation-duration: 30s;
+}
+.mo-fire {
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left:50%;
+  margin-left: -100px;
+  top: 100px;
+}
+.claus {
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: none;
+}
+.mo-fire {
+    position: relative;
+}
+#jseyeslayer {
+    pointer-events: none;
+}
+.sml {
+    top: 10px;
+    left: -80px;
+    animation-duration: 20s;
+}
+.rudolph {
+    pointer-events: painted;
+}
+.background-salon {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+.lrg {
+    top: 40px;
+    left: -140px;
+    animation-duration: 40s;
+}
+@media screen and (min-width: 1024px) and (max-width: 1367px) and (orientation: landscape) {
+    #jseyeslayer {
+        bottom: 240px;
+        left: -30px;
+    }
+    #joyeuse {
+    margin-left: 10%;
+    width: 60%;
+}
+    .access {
+    position: absolute;
+    right: 0;
+}
+}
+@media screen and (min-width: 1024px) and (min-height: 768px) and (orientation: landscape) {
+     #joyeuse {
+    margin-left: 20%;
+}
+}
+@media screen and (max-width: 640px) and (max-device-width: 480px){
+    #joyeuse {
+        margin-left: 4%;
+        width: 40%;
+    }
+}
